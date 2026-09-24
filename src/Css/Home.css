@@ -80,15 +80,17 @@
 }
 
 #home .stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 2rem;
+  width: 100%;
 }
 
 #home .stat {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  min-width: 0;
 }
 
 #home .stat strong {
@@ -151,6 +153,11 @@
 @media (max-width: 520px) {
   #home .hero-actions {
     flex-direction: column;
+  }
+
+  #home .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
   }
 
   #home .btn {
