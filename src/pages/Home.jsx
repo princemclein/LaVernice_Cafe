@@ -2,6 +2,7 @@ import "../Css/Home.css";
 import Hero from "../components/Hero.jsx";
 import BestSellers from "../components/BestSellers.jsx";
 import AboutTeaser from "../components/AboutTeaser.jsx";
+import Testimonials from "../components/Testimonials.jsx";
 
 const stats = [
   { value: "50+", label: "Menu Items" },
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <BestSellers />
       <AboutTeaser />
+      <Testimonials />
     </>
   );
 }
