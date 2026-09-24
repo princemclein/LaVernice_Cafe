@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import "../Css/Navbar.css";
 import Logo from "../assets/Brand/Lv_logo.png";
 
@@ -59,19 +59,6 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-
-        <div className={`header-actions ${isMenuOpen ? "open" : ""}`}>
-          <button className="cart-button" aria-label="Cart">
-            <FiShoppingCart />
-          </button>
-          <Link
-            to="/order"
-            className="order-button"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Order
-          </Link>
-        </div>
       </div>
     </header>
   );

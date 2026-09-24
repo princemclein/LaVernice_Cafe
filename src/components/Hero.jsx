@@ -1,5 +1,5 @@
 import "../Css/Home.css";
-import heroImg from "../assets/Hero/hero-img.jpg";
+import heroImg from "../assets/Home/hero-img.jpg";
 
 const stats = [
   { value: "50+", label: "Menu Items" },
@@ -21,11 +21,11 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="#order" className="btn btn-solid">
-            Order Now →
+          <a href="/menu" className="btn btn-solid">
+            Explore Menu →
           </a>
-          <a href="#menu" className="btn btn-outline">
-            Explore Menu
+          <a href="#about-teaser" className="btn btn-outline">
+            Our Story
           </a>
         </div>
 

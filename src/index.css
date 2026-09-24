@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --paper: #ffffff;
+  --primary: #2d8c82;
   --ink: #111111;
-  --brand: #2d8c82;
+  --paper: #ffffff;
+  --muted: #333333;
   --shadow: rgba(17, 17, 17, 0.12);
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
 }
-
 html {
   font-family: "Inter", sans-serif;
   background: var(--paper);
