@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import "../Css/Navbar.css";
-import Logo from "../assets/Lv_logo.png";
+import Logo from "../assets/Brand/Lv_logo.png";
 
 export default function Navbar() {
   return (
