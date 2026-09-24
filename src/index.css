@@ -1,0 +1,40 @@
+html {
+  font-family: "DM Sans", sans-serif;
+  background: #fffaf3;
+  color: #2f241f;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: #fffaf3;
+  color: #2f241f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 12px;
+  color: #2d1d14;
+}
+
+p,
+a,
+button,
+li,
+span {
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
