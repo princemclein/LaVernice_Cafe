@@ -59,8 +59,8 @@ export default function Menu() {
         <p className="eyebrow">Menu</p>
         <h1>Made for slow sips and easy favorites.</h1>
         <p>
-          From creamy frappes and espresso pours to buttery pastries and mellow teas,
-          every item is designed to feel like a little everyday ritual.
+          From creamy frappes and espresso pours to buttery pastries and mellow
+          teas, every item is designed to feel like a little everyday ritual.
         </p>
       </div>
 

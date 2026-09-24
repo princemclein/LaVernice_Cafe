@@ -7,11 +7,13 @@ const PROMOS = [
   },
   {
     title: "Weekend Matcha Moment",
-    description: "Enjoy a free upsize on matcha drinks every Saturday and Sunday.",
+    description:
+      "Enjoy a free upsize on matcha drinks every Saturday and Sunday.",
   },
   {
     title: "Friends & Frappes",
-    description: "Share a combo of two frappes and get a free add-on syrup shot.",
+    description:
+      "Share a combo of two frappes and get a free add-on syrup shot.",
   },
 ];
 

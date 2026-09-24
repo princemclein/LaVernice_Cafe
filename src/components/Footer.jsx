@@ -8,7 +8,8 @@ export default function Footer() {
         <div className="site-footer__brand">
           <h3>LaVernice Cafe</h3>
           <p>
-            Side by side with your coffee ritual, from slow mornings to after-dinner conversations.
+            Side by side with your coffee ritual, from slow mornings to
+            after-dinner conversations.
           </p>
         </div>
 

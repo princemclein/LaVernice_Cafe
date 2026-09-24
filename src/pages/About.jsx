@@ -11,12 +11,13 @@ export default function About() {
       <div className="story-grid">
         <div className="story-copy">
           <p>
-            LaVernice Cafe began with a simple idea: a cozy neighborhood spot where the coffee is
-            good, the pastries are fresh, and there is always room to linger a little longer.
+            LaVernice Cafe began with a simple idea: a cozy neighborhood spot
+            where the coffee is good, the pastries are fresh, and there is
+            always room to linger a little longer.
           </p>
           <p>
-            We serve espresso favorites, chilled frappes, and comforting sweet bites in a space
-            designed to feel warm, easy, and familiar.
+            We serve espresso favorites, chilled frappes, and comforting sweet
+            bites in a space designed to feel warm, easy, and familiar.
           </p>
         </div>
 
