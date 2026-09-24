@@ -60,12 +60,17 @@
   border: 1px solid var(--primary);
   border-radius: 12px;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
-#home .btn:hover {
-  transform: translateY(-1px);
+#home .btn-arrow {
+  display: inline-block;
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
 }
 
 #home .btn-solid {
@@ -74,9 +79,20 @@
   box-shadow: 0 12px 22px rgba(45, 140, 130, 0.2);
 }
 
+#home .btn-solid:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
 #home .btn-outline {
   background: transparent;
   color: var(--ink);
+}
+
+#home .btn-outline:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 12px 22px rgba(45, 140, 130, 0.2);
 }
 
 #home .stats {

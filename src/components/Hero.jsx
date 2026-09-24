@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="hero-actions">
           <a href="/menu" className="btn btn-solid">
-            Explore Menu →
+            Explore Menu <span className="btn-arrow">→</span>
           </a>
           <a href="#about-teaser" className="btn btn-outline">
             Our Story
