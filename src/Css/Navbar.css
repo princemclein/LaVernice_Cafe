@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
-  background: #48c9b9;
-  border-bottom: 1px solid #3bb7a7;
+  background: #2d8c82;
+  border-bottom: 1px solid #2d8c82;
 }
 
 .navbar-inner {
@@ -71,7 +71,7 @@
 }
 
 .nav-links a:hover {
-  color: #eafdf9;
+  color: #ffffff;
 }
 
 .nav-links a:hover::after {
