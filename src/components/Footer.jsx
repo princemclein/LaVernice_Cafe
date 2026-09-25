@@ -28,7 +28,7 @@ export default function Footer() {
           <h4>Visit</h4>
           <p>123 Coffee Lane</p>
           <p>Open daily: 7:00 AM – 9:00 PM</p>
-          <p>hello@lavernicecafe.com</p>
+          <p>laverniceolongapo@gmail.com</p>
         </div>
       </div>
     </footer>

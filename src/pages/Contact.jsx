@@ -23,8 +23,8 @@ export default function Contact() {
 
         <div className="contact-card">
           <h2>Get in touch</h2>
-          <p>hello@lavernicecafe.com</p>
-          <p>+63 912 345 6789</p>
+          <p>laverniceolongapo@gmail.com</p>
+          <p>0977 612 8363</p>
         </div>
       </div>
     </section>
