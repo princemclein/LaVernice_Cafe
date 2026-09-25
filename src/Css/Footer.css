@@ -20,7 +20,6 @@
 }
 
 .site-footer__brand p,
-.site-footer__info p,
 .site-footer__links a {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
@@ -31,6 +30,33 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.site-footer__social a {
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  transition: color 0.2s ease;
+}
+
+.site-footer__social a:hover {
+  color: #ffffff;
+}
+
+.site-footer__email {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.7;
+}
+
+.site-footer__email:hover {
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

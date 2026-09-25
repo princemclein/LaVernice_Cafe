@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import "../Css/Footer.css";
 
 export default function Footer() {
@@ -25,10 +26,42 @@ export default function Footer() {
         </div>
 
         <div className="site-footer__info">
-          <h4>Visit</h4>
-          <p>123 Coffee Lane</p>
-          <p>Open daily: 7:00 AM – 9:00 PM</p>
-          <p>laverniceolongapo@gmail.com</p>
+          <h4>Connect</h4>
+          <div className="site-footer__social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100079836871624"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebook size={20} />
+            </a>
+
+            <a
+              href="https://www.instagram.com/lavernicecafe_olongapo?fbclid=IwY2xjawUi2xlleHRuA2FlbQIxMABwZG9mBWJyaWQRMWhOZmZRRUxoWmVlV3JXQjVzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeH49nKDJ2_d8bAKwUfk5shi7I_FEw9_gLOXJYLF4sp6Dx8FkJbTb6KAJSYrE_aem_ngFFJ480A5V5r0LvW9Ar1A"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={20} />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@_lavernicegapo_?fbclid=IwY2xjawUi2yxleHRuA2FlbQIxMABwZG9mBWJyaWQRMWhOZmZRRUxoWmVlV3JXQjVzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeJfZPrRXvOvm8YPoZxhGIXPgs58j8jOGSEZiN2xshUbH3uOY5-6acL09-VVU_aem_iTcApq-lfGLBp7dtxMdteg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <FaTiktok size={20} />
+            </a>
+          </div>
+
+          <a
+            className="site-footer__email"
+            href="mailto:laverniceolongapo@gmail.com"
+          >
+            laverniceolongapo@gmail.com
+          </a>
         </div>
       </div>
     </footer>
