@@ -1,4 +1,4 @@
-import "../Css/Home.css";
+import "../Css/Hero.css";
 import heroImg from "../assets/Home/hero-img.jpg";
 
 const stats = [
