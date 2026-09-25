@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Css/BestSellers.css";
 import heroImg from "../assets/Home/hero-img.jpg";
 
@@ -45,9 +46,9 @@ export default function BestSellers() {
               The drinks our regulars keep coming back for.
             </p>
           </div>
-          <a className="bs__link" href="/menu">
+          <Link className="bs__link" to="/menu">
             View Full Menu
-          </a>
+          </Link>
         </header>
 
         <ul className="bs__grid">

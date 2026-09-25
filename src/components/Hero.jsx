@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Css/Hero.css";
 import heroImg from "../assets/Home/hero-img.jpg";
 
@@ -21,9 +22,9 @@ export default function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="/menu" className="btn btn-solid">
+          <Link to="/menu" className="btn btn-solid">
             Explore Menu <span className="btn-arrow">→</span>
-          </a>
+          </Link>
           <a href="#about-teaser" className="btn btn-outline">
             Our Story
           </a>
