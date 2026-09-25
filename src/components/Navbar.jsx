@@ -43,11 +43,6 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/promotions" onClick={() => setIsMenuOpen(false)}>
-                Promotions
-              </Link>
-            </li>
-            <li>
               <Link to="/about" onClick={() => setIsMenuOpen(false)}>
                 About
               </Link>
