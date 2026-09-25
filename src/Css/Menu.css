@@ -141,16 +141,6 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.promo-label {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  font-weight: 700;
-}
-
 @media (max-width: 900px) {
   .menu-grid,
   .promo-grid,
