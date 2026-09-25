@@ -1,10 +1,13 @@
+import { useState } from "react";
 import "../Css/Menu.css";
 import heroImg from "../assets/Home/hero-img.jpg";
+
+const CATEGORIES = ["All", "Signature", "Coffee", "Non-Coffee", "Pastries"];
 
 const MENU_ITEMS = [
   {
     id: "signature-espresso",
-    category: "Coffee",
+    category: "Signature",
     name: "Signature Espresso",
     desc: "A rich, velvety shot with notes of caramel and roasted cocoa.",
     price: 120,
@@ -12,7 +15,7 @@ const MENU_ITEMS = [
   },
   {
     id: "strawberry-frappe",
-    category: "Frappe",
+    category: "Non-Coffee",
     name: "Strawberry Frappe",
     desc: "Creamy strawberry blend topped with whipped cream and a sweet finish.",
     price: 145,
@@ -20,7 +23,7 @@ const MENU_ITEMS = [
   },
   {
     id: "choco-fudge-frappe",
-    category: "Frappe",
+    category: "Coffee",
     name: "Choco Fudge Frappe",
     desc: "Deep chocolate flavor with a smooth, indulgent texture.",
     price: 155,
@@ -36,7 +39,7 @@ const MENU_ITEMS = [
   },
   {
     id: "matcha-cloud",
-    category: "Tea",
+    category: "Non-Coffee",
     name: "Matcha Cloud",
     desc: "Earthy matcha blended smoothly with creamy milk and a light foam top.",
     price: 150,
@@ -44,7 +47,7 @@ const MENU_ITEMS = [
   },
   {
     id: "classic-donut",
-    category: "Treats",
+    category: "Pastries",
     name: "Classic Glazed Donut",
     desc: "Soft, airy, and finished with a glossy sugar glaze.",
     price: 55,
@@ -53,6 +56,13 @@ const MENU_ITEMS = [
 ];
 
 export default function Menu() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filteredItems =
+    activeFilter === "All"
+      ? MENU_ITEMS
+      : MENU_ITEMS.filter((item) => item.category === activeFilter);
+
   return (
     <section className="menu-page">
       <div className="menu-page__intro">
@@ -64,8 +74,22 @@ export default function Menu() {
         </p>
       </div>
 
+      <div className="menu-filters">
+        {CATEGORIES.map((cat) => (
+          <button
+            key={cat}
+            className={`menu-filter__btn ${
+              activeFilter === cat ? "menu-filter__btn--active" : ""
+            }`}
+            onClick={() => setActiveFilter(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="menu-grid">
-        {MENU_ITEMS.map((item) => (
+        {filteredItems.map((item) => (
           <article className="menu-card" key={item.id}>
             <img src={item.image} alt={item.name} loading="lazy" />
 

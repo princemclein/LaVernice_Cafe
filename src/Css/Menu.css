@@ -38,6 +38,36 @@
   line-height: 1.7;
 }
 
+.menu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.menu-filter__btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-filter__btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.menu-filter__btn--active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
 .menu-grid,
 .promo-grid,
 .contact-grid,
@@ -99,15 +129,7 @@
 .page-shell {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 72px 24px 96px;
-}
-
-.page-intro {
-  margin-bottom: 32px;
-}
-
-.story-grid {
-  grid-template-columns: 1.5fr 1fr;
+  display: grid;
   align-items: start;
 }
 
